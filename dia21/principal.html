@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platos Principales - La Buena Mesa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="entrante.html" class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+        <path d="M7 2v20"/>
+        <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+      </svg>
+      <span>La Buena Mesa</span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">Categorías ▾</label>
+
+    <ul class="dropdown-menu">
+      <li><a href="entrante.html">Entrantes</a></li>
+      <li><a href="principal.html" class="activo">Platos Principales</a></li>
+      <li><a href="postre.html">Postres</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Platos Principales</h1>
+    <p>Especialidades de la casa · Cocina Artesanal</p>
+  </header>
+
+  <main class="menu-container">
+    <section class="categoria">
+      <h2>Nuestros Principales</h2>
+      
+      <article class="platillo">
+        <img src="https://unsplash.com" alt="Hamburguesa Artesanal">
+        <div class="info">
+          <div class="item">
+            <span class="nombre">Hamburguesa Artesanal</span>
+            <span class="precio">12.00 €</span>
+          </div>
+          <p class="descripcion">Carne de ternera, queso cheddar, bacon crujiente, lechuga y tomate.</p>
+        </div>
+      </article>
+
+      <article class="platillo">
+        <img src="https://unsplash.com" alt="Pasta Carbonara">
+        <div class="info">
+          <div class="item">
+            <span class="nombre">Pasta Carbonara</span>
+            <span class="precio">11.50 €</span>
+          </div>
+          <p class="descripcion">Espaguetis al dente con guanciale, yema de huevo y queso pecorino.</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="navegacion-paginas">
+      <a href="entrante.html" class="btn-anterior">← Volver a Entrantes</a>
+      <a href="postre.html" class="btn-siguiente">Ir a Postres →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 La Buena Mesa - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

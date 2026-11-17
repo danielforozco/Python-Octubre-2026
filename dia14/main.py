@@ -40,15 +40,16 @@ def borrar_fichero(fichero):
     else:
         print(f"Fichero '{fichero}' no existe para borrar.")
 
-def mover_fichero(origen, destino):
-    
-    path_origen = Path(origen)
-    path_destino = Path(destino)
-    if path_origen.exists() and path_origen.is_file():
-        shutil.move(str(path_origen), str(path_destino))
-        print(f"Fichero movido de '{origen}' a '{destino}'.")
+def mover_fichero(fichero,origen, destino):
+
+   path_origen = Path(origen)
+   path_destino = Path(destino)
+    if origen.exists() and origen.is_file():
+        shutil.move(str(origen), str(destino))
+        print(f"Fichero '{origen}' movido a '{destino}'.")
     else:
-        print(f"Fichero '{path_origen}' no existe para mover.")
+        print(f"Fichero '{origen}' no existe para mover.")
+   
 
 
 def menu_app ():

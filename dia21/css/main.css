@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Barra de navegación y Menú Desplegable sin JS --- */
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.logo svg {
+  color: #e74c3c;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  background-color: #c0392b;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.menu-btn:hover {
+  background-color: #e74c3c;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  background-color: white;
+  list-style: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 190px;
+}
+
+.menu-toggle:checked ~ .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f9f9f9;
+  color: #c0392b;
+}
+
+/* Resalta la página actual en el menú desplegable */
+.dropdown-menu li a.activo {
+  background-color: #fdecea;
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* --- Encabezado --- */
+header {
+  text-align: center;
+  background-color: #c0392b;
+  color: white;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+}
+
+/* --- Contenedor del Menú --- */
+.menu-container {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.categoria {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.categoria h2 {
+  color: #c0392b;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* --- Diseño de cada platillo con imagen --- */
+.platillo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.platillo:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.platillo img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.nombre {
+  font-size: 1.1rem;
+}
+
+.precio {
+  color: #e74c3c;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* --- Botones inferiores para pasar de página --- */
+.navegacion-paginas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.btn-anterior,
+.btn-siguiente {
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.btn-anterior:hover,
+.btn-siguiente:hover {
+  background-color: #c0392b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --- Estilos específicos para index.html --- */
+.texto-inicio {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.accesos-carta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-enlace {
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
+  background-color: #c0392b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.tarjeta-enlace:hover {
+  background-color: #2c3e50;
+}
+
+.ubicacion-info p {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.mapa-contenedor {
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.mapa-contenedor iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  display: block;
+}
