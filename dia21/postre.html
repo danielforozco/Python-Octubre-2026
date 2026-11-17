@@ -9,7 +9,7 @@
 <body>
 
   <nav class="navbar">
-    <a href="entrante.html" class="logo">
+    <a href="index.html" class="logo">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
         <path d="M7 2v20"/>
@@ -19,9 +19,10 @@
     </a>
 
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">Categorías ▾</label>
+    <label for="menu-toggle" class="menu-btn">Menú ▾</label>
 
     <ul class="dropdown-menu">
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="entrante.html">Entrantes</a></li>
       <li><a href="principal.html">Platos Principales</a></li>
       <li><a href="postre.html" class="activo">Postres</a></li>
@@ -30,44 +31,92 @@
 
   <header>
     <h1>Postres</h1>
-    <p>El toque dulce final · Cocina Artesanal</p>
+    <p>Haz clic en cualquier foto para ampliarla</p>
   </header>
 
   <main class="menu-container">
     <section class="categoria">
       <h2>Nuestros Postres</h2>
       
+      <!-- Plato 1 -->
       <article class="platillo">
-        <img src="https://unsplash.com" alt="Tarta de Queso">
+        <a href="#foto-tarta" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Tarta de Queso">
+        </a>
         <div class="info">
           <div class="item">
             <span class="nombre">Tarta de Queso</span>
             <span class="precio">5.50 €</span>
           </div>
-          <p class="descripcion">Tarta cremosa horneada con mermelada de frutos rojos.</p>
+          <p class="descripcion">Tarta cremosa horneada al estilo tradicional con mermelada de frutos rojos.</p>
         </div>
       </article>
 
+      <!-- Plato 2 -->
       <article class="platillo">
-        <img src="https://unsplash.com" alt="Brownie de Chocolate">
+        <a href="#foto-brownie" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Brownie de Chocolate">
+        </a>
         <div class="info">
           <div class="item">
             <span class="nombre">Brownie de Chocolate</span>
             <span class="precio">5.00 €</span>
           </div>
-          <p class="descripcion">Servido tibio con una bola de helado de vainilla artesanal.</p>
+          <p class="descripcion">Bizcocho tibio de chocolate negro con nueces y bola de helado de vainilla.</p>
+        </div>
+      </article>
+
+      <!-- Plato 3 -->
+      <article class="platillo">
+        <a href="#foto-tiramisu" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Tiramisú Casero">
+        </a>
+        <div class="info">
+          <div class="item">
+            <span class="nombre">Tiramisú Casero</span>
+            <span class="precio">5.80 €</span>
+          </div>
+          <p class="descripcion">Capas de bizcocho bañado en café espresso, crema de mascarpone y cacao puro.</p>
         </div>
       </article>
     </section>
 
     <div class="navegacion-paginas">
       <a href="principal.html" class="btn-anterior">← Volver a Principales</a>
-      <a href="entrante.html" class="btn-siguiente">Volver al inicio ↺</a>
+      <a href="index.html" class="btn-siguiente">Volver al Inicio ↺</a>
     </div>
   </main>
 
+  <!-- Vistas ampliadas (Modal sin JS) -->
+  <div id="foto-tarta" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Tarta de Queso">
+      <p>Tarta de Queso · 5.50 €</p>
+    </div>
+  </div>
+
+  <div id="foto-brownie" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Brownie de Chocolate">
+      <p>Brownie de Chocolate · 5.00 €</p>
+    </div>
+  </div>
+
+  <div id="foto-tiramisu" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Tiramisú Casero">
+      <p>Tiramisú Casero · 5.80 €</p>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2026 La Buena Mesa - Todos los derechos reservados</p>
+    <p>&copy; 2026 La Buena Mesa · Casco Antiguo, Sevilla</p>
   </footer>
 
 </body>

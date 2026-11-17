@@ -9,7 +9,7 @@
 <body>
 
   <nav class="navbar">
-    <a href="entrante.html" class="logo">
+    <a href="index.html" class="logo">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
         <path d="M7 2v20"/>
@@ -19,9 +19,10 @@
     </a>
 
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">Categorías ▾</label>
+    <label for="menu-toggle" class="menu-btn">Menú ▾</label>
 
     <ul class="dropdown-menu">
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="entrante.html">Entrantes</a></li>
       <li><a href="principal.html" class="activo">Platos Principales</a></li>
       <li><a href="postre.html">Postres</a></li>
@@ -30,32 +31,52 @@
 
   <header>
     <h1>Platos Principales</h1>
-    <p>Especialidades de la casa · Cocina Artesanal</p>
+    <p>Haz clic en cualquier foto para ampliarla</p>
   </header>
 
   <main class="menu-container">
     <section class="categoria">
       <h2>Nuestros Principales</h2>
       
+      <!-- Plato 1 -->
       <article class="platillo">
-        <img src="https://unsplash.com" alt="Hamburguesa Artesanal">
+        <a href="#foto-hamburguesa" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Hamburguesa Artesanal">
+        </a>
         <div class="info">
           <div class="item">
             <span class="nombre">Hamburguesa Artesanal</span>
             <span class="precio">12.00 €</span>
           </div>
-          <p class="descripcion">Carne de ternera, queso cheddar, bacon crujiente, lechuga y tomate.</p>
+          <p class="descripcion">Carne de ternera, queso cheddar madurado, bacon crujiente, lechuga y tomate.</p>
         </div>
       </article>
 
+      <!-- Plato 2 -->
       <article class="platillo">
-        <img src="https://unsplash.com" alt="Pasta Carbonara">
+        <a href="#foto-pasta" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Pasta Carbonara">
+        </a>
         <div class="info">
           <div class="item">
             <span class="nombre">Pasta Carbonara</span>
             <span class="precio">11.50 €</span>
           </div>
-          <p class="descripcion">Espaguetis al dente con guanciale, yema de huevo y queso pecorino.</p>
+          <p class="descripcion">Espaguetis al dente con guanciale italiano, yema de huevo y queso pecorino.</p>
+        </div>
+      </article>
+
+      <!-- Plato 3 -->
+      <article class="platillo">
+        <a href="#foto-salmon" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Salmón a la Plancha">
+        </a>
+        <div class="info">
+          <div class="item">
+            <span class="nombre">Salmón a la Plancha</span>
+            <span class="precio">14.50 €</span>
+          </div>
+          <p class="descripcion">Lomo de salmón fresco acompañado de espárragos verdes y patatas asadas.</p>
         </div>
       </article>
     </section>
@@ -66,8 +87,36 @@
     </div>
   </main>
 
+  <!-- Vistas ampliadas (Modal sin JS) -->
+  <div id="foto-hamburguesa" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Hamburguesa Artesanal">
+      <p>Hamburguesa Artesanal · 12.00 €</p>
+    </div>
+  </div>
+
+  <div id="foto-pasta" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Pasta Carbonara">
+      <p>Pasta Carbonara · 11.50 €</p>
+    </div>
+  </div>
+
+  <div id="foto-salmon" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Salmón a la Plancha">
+      <p>Salmón a la Plancha · 14.50 €</p>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2026 La Buena Mesa - Todos los derechos reservados</p>
+    <p>&copy; 2026 La Buena Mesa · Casco Antiguo, Sevilla</p>
   </footer>
 
 </body>

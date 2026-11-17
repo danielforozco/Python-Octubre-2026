@@ -9,7 +9,7 @@
 <body>
 
   <nav class="navbar">
-    <a href="entrante.html" class="logo">
+    <a href="index.html" class="logo">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
         <path d="M7 2v20"/>
@@ -19,9 +19,10 @@
     </a>
 
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">Categorías ▾</label>
+    <label for="menu-toggle" class="menu-btn">Menú ▾</label>
 
     <ul class="dropdown-menu">
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="entrante.html" class="activo">Entrantes</a></li>
       <li><a href="principal.html">Platos Principales</a></li>
       <li><a href="postre.html">Postres</a></li>
@@ -30,44 +31,92 @@
 
   <header>
     <h1>Entrantes</h1>
-    <p>Para abrir el apetito · Cocina Artesanal</p>
+    <p>Haz clic en cualquier foto para ampliarla</p>
   </header>
 
   <main class="menu-container">
     <section class="categoria">
       <h2>Nuestros Entrantes</h2>
       
+      <!-- Plato 1 -->
       <article class="platillo">
-        <img src="https://unsplash.com" alt="Ensalada César">
+        <a href="#foto-ensalada" class="foto-link" title="Ampliar foto">
+          <img src="image/kebab1.jpg" alt="Ensalada César">
+        </a>
         <div class="info">
           <div class="item">
             <span class="nombre">Ensalada César</span>
             <span class="precio">8.50 €</span>
           </div>
-          <p class="descripcion">Lechuga romana, crutones, queso parmesano y salsa césar casera.</p>
+          <p class="descripcion">Lechuga romana, crutones crujientes, lascas de parmesano y salsa césar casera.</p>
         </div>
       </article>
 
+      <!-- Plato 2 -->
       <article class="platillo">
-        <img src="https://unsplash.com" alt="Sopa de la Casa">
+        <a href="#foto-sopa" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Sopa de la Casa">
+        </a>
         <div class="info">
           <div class="item">
             <span class="nombre">Sopa de la Casa</span>
             <span class="precio">6.00 €</span>
           </div>
-          <p class="descripcion">Sopa tradicional de verduras frescas de temporada.</p>
+          <p class="descripcion">Crema tradicional de verduras frescas de temporada con un toque de aceite de oliva.</p>
+        </div>
+      </article>
+
+      <!-- Plato 3 -->
+      <article class="platillo">
+        <a href="#foto-tosta" class="foto-link" title="Ampliar foto">
+          <img src="https://unsplash.com" alt="Tosta de Tomate y Albahaca">
+        </a>
+        <div class="info">
+          <div class="item">
+            <span class="nombre">Tosta de Tomate y Albahaca</span>
+            <span class="precio">7.00 €</span>
+          </div>
+          <p class="descripcion">Pan rústico tostado con tomate natural, ajo suave, albahaca fresca y AOVE.</p>
         </div>
       </article>
     </section>
 
     <div class="navegacion-paginas">
-      <span></span>
+      <a href="index.html" class="btn-anterior">← Volver al Inicio</a>
       <a href="principal.html" class="btn-siguiente">Ir a Platos Principales →</a>
     </div>
   </main>
 
+  <!-- Vistas ampliadas (Modal sin JS) -->
+  <div id="foto-ensalada" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Ensalada César">
+      <p>Ensalada César · 8.50 €</p>
+    </div>
+  </div>
+
+  <div id="foto-sopa" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Sopa de la Casa">
+      <p>Sopa de la Casa · 6.00 €</p>
+    </div>
+  </div>
+
+  <div id="foto-tosta" class="modal-foto">
+    <a href="#cerrar" class="modal-fondo"></a>
+    <div class="modal-contenido">
+      <a href="#cerrar" class="modal-cerrar">✕</a>
+      <img src="https://unsplash.com" alt="Tosta de Tomate y Albahaca">
+      <p>Tosta de Tomate y Albahaca · 7.00 €</p>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2026 La Buena Mesa - Todos los derechos reservados</p>
+    <p>&copy; 2026 La Buena Mesa · Casco Antiguo, Sevilla</p>
   </footer>
 
 </body>
