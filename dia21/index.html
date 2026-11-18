@@ -1,87 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Buena Mesa - Restaurante en Sevilla</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ébano & Brasa | Alta Cocina Contemporánea</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <!-- Barra de navegación con menú desplegable sin JS -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-        <path d="M7 2v20"/>
-        <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
-      </svg>
-      <span>La Buena Mesa</span>
-    </a>
+    <header>
+        <a href="index.html" class="logo">ÉBANO <span>&</span> BRASA</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="carta.html">La Carta</a></li>
+                <li><a href="reservar.html">Reservar</a></li>
+                <li><a href="acerca.html">Ubicación y Horarios</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">Menú ▾</label>
+    <main>
+        <section class="hero">
+            <h1>El arte del fuego y el producto de temporada</h1>
+            <p>Una experiencia gastronómica íntima donde la tradición culinaria se encuentra con técnicas contemporáneas en un ambiente sereno y acogedor.</p>
+            <a href="reservar.html" class="btn">Reservar Mesa</a>
+        </section>
 
-    <ul class="dropdown-menu">
-      <li><a href="index.html" class="activo">Inicio</a></li>
-      <li><a href="entrante.html">Entrantes</a></li>
-      <li><a href="principal.html">Platos Principales</a></li>
-      <li><a href="postre.html">Postres</a></li>
-    </ul>
-  </nav>
+        <section class="historia">
+            <h2 class="titulo-seccion">Nuestra Filosofía</h2>
+            <p class="subtitulo-seccion">Pasión por el origen, respeto por el tiempo</p>
+            <p>
+                En <strong>Ébano & Brasa</strong> trabajamos directamente con pequeños productores locales y lonjas seleccionadas para ofrecer una propuesta honesta y cambiante. Cada plato nace del respeto absoluto a la materia prima, realzada mediante cocciones lentas sobre brasas de encina y maridajes cuidadosamente seleccionados de nuestra bodega.
+            </p>
+        </section>
+    </main>
 
-  <!-- Portada de bienvenida -->
-  <header>
-    <h1>Bienvenidos a La Buena Mesa</h1>
-    <p>Sabores tradicionales y cocina casera en el corazón de Sevilla</p>
-  </header>
-
-  <main class="menu-container">
-
-    <!-- Descripción del restaurante -->
-    <section class="categoria">
-      <h2>Sobre Nosotros</h2>
-      <p class="texto-inicio">
-        En <strong>La Buena Mesa</strong> preparamos cada plato con ingredientes frescos de temporada y recetas tradicionales elaboradas al momento. Un espacio acogedor pensado para disfrutar de buena comida, un trato cercano y el ambiente único de nuestra ciudad.
-      </p>
-
-      <div class="accesos-carta">
-        <a href="entrante.html" class="tarjeta-enlace">Entrantes →</a>
-        <a href="principal.html" class="tarjeta-enlace">Principales →</a>
-        <a href="postre.html" class="tarjeta-enlace">Postres →</a>
-      </div>
-    </section>
-
-    <!-- Ubicación en el centro de Sevilla -->
-    <section class="categoria">
-      <h2>Dónde Estamos</h2>
-      <div class="ubicacion-info">
-        <p>
-          <strong>Dirección:</strong> Calle Sierpes, 42 · Casco Antiguo, 41004 Sevilla
-        </p>
-        <p>
-          <strong>Horario:</strong> Martes a Domingo de 13:00 a 16:30 y de 20:00 a 23:30
-        </p>
-        <p>
-          <strong>Teléfono:</strong> 954 00 11 22
-        </p>
-      </div>
-
-      <!-- Mapa incrustado del centro de Sevilla -->
-      <div class="mapa-contenedor">
-        <iframe 
-          title="Ubicación en el centro de Sevilla"
-          src="https://openstreetmap.org" 
-          loading="lazy">
-        </iframe>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 La Buena Mesa · Casco Antiguo, Sevilla</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 Ébano & Brasa Restaurante. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
